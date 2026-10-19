@@ -10,7 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity 
-@Table(name = "api_pokemon")
+@Table(name = "pokemon")
 @Data 
 @NoArgsConstructor 
 
@@ -18,16 +18,16 @@ public class ApiPokemon {
 
 @Id
 @GeneratedValue (strategy = GenerationType.IDENTITY)
-@Column(name = "pokemon_id")
+@Column(name = "id")
 Long id;
 
-@Column(name = "pokemon_name")
+@Column(name = "name")
 String name;
 
-@Column (name = "pokemon_imagen_url_img")
+@Column (name = "imagen_url")
 String imagenUrlImg;
 
-@Column (name = "pokemon_type")
+@Column (name = "type")
 String type;
 
 
